@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Usama &amp; Alishba — Wedding Invitation</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Preloader -->
+<div id="preloader"><div class="loader-ring"></div></div>
+
+<!-- Invitation Gate (card-opening intro) -->
+<div id="invite-gate">
+  <div class="gate-panel left">
+    <div class="gate-ornament tl">❖</div>
+    <div class="gate-ornament bl">❖</div>
+  </div>
+  <div class="gate-panel right">
+    <div class="gate-ornament tr">❖</div>
+    <div class="gate-ornament br">❖</div>
+  </div>
+  <div class="gate-center">
+    <div class="gate-bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+    <div class="gate-kicker">You are cordially invited to the wedding of</div>
+    <div class="gate-names">Usama <span>&amp;</span> Alishba</div>
+    <button id="open-invite-btn" type="button" aria-label="Open Invitation">
+      <span class="seal-btn">
+        <span class="seal-text">Open<br>Invitation</span>
+      </span>
+    </button>
+  </div>
+</div>
+
+<!-- Floating petals -->
+<div id="petals"></div>
+
+<!-- HERO -->
+<header class="hero" id="hero">
+  <div class="hero-content">
+    <div class="bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+    <div class="hero-kicker">Together with their families</div>
+    <h1 class="hero-names shimmer-text">
+      Usama Yasin
+      <span class="hero-and">weds</span>
+      Alishba Ibrar
+    </h1>
+    <p class="hero-tagline">"And of His signs is that He created for you mates... that you may find tranquility in them." — Qur'an 30:21</p>
+    <p class="hero-dates">08 — 11 October</p>
+  </div>
+  <div class="scroll-indicator">&#8595;</div>
+</header>
+
+<!-- COUPLE -->
+<section class="section" id="couple">
+  <p class="section-sub reveal">With the blessings of Allah</p>
+  <h2 class="section-title reveal">The Bride &amp; Groom</h2>
+  <div class="divider reveal"></div>
+
+  <div class="couple-wrap">
+    <img src="imgs/couple-hijab.png" alt="Groom and Bride illustration" class="couple-img reveal">
+  </div>
+
+  <div class="couple-cards">
+    <div class="couple-card tilt reveal reveal-delay-1">
+      <div class="role">The Groom</div>
+      <h3 class="shimmer-text">Usama Yasin</h3>
+      <p>Son of<span>Muhammad Yasin</span></p>
+      <p>Brother of<span>Ihtisham Ul Hassan</span></p>
+    </div>
+    <div class="couple-card tilt reveal reveal-delay-2">
+      <div class="role">The Bride</div>
+      <h3 class="shimmer-text">Alishba Ibrar</h3>
+      <p>Daughter of<span>Ibrar Hussain</span></p>
+      <p>Sister of<span>Ehsan Ibrar &amp; Minhaj Ibrar</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- EVENTS -->
+<section class="section" id="events">
+  <p class="section-sub reveal">Save the dates</p>
+  <h2 class="section-title reveal">Wedding Festivities</h2>
+  <div class="divider reveal"></div>
+
+  <div class="timeline">
+    <div class="event-card tilt reveal reveal-delay-1">
+      <span class="event-icon">🕌</span>
+      <div class="event-date">08</div>
+      <div class="event-month">October</div>
+      <div class="event-title">Nikah &amp; Mehndi</div>
+      <div class="event-desc">Nikah ceremony, followed by Mehndi celebrations after Isha</div>
+    </div>
+    <div class="event-card tilt reveal reveal-delay-2">
+      <span class="event-icon">🌸</span>
+      <div class="event-date">09</div>
+      <div class="event-month">October</div>
+      <div class="event-title">Family Gathering</div>
+      <div class="event-desc">A casual day of local family get-togethers</div>
+    </div>
+    <div class="event-card tilt reveal reveal-delay-3">
+      <span class="event-icon">💍</span>
+      <div class="event-date">10</div>
+      <div class="event-month">October</div>
+      <div class="event-title">Barat</div>
+      <div class="event-desc">The Barat ceremony — the bride departs with the groom</div>
+    </div>
+    <div class="event-card tilt reveal reveal-delay-3">
+      <span class="event-icon">🎉</span>
+      <div class="event-date">11</div>
+      <div class="event-month">October</div>
+      <div class="event-title">Walima</div>
+      <div class="event-desc">A reception hosted by the groom's family</div>
+    </div>
+  </div>
+</section>
+
+<!-- COUNTDOWN -->
+<section class="countdown-section">
+  <p class="section-sub reveal">Counting down to</p>
+  <h2 class="section-title reveal">Our Nikah Day</h2>
+  <div class="divider reveal"></div>
+  <div class="countdown" id="countdown">
+    <div class="count-box"><span class="count-num" id="cd-days">00</span><span class="count-label">Days</span></div>
+    <div class="count-box"><span class="count-num" id="cd-hours">00</span><span class="count-label">Hours</span></div>
+    <div class="count-box"><span class="count-num" id="cd-mins">00</span><span class="count-label">Minutes</span></div>
+    <div class="count-box"><span class="count-num" id="cd-secs">00</span><span class="count-label">Seconds</span></div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section class="section" id="location">
+  <p class="section-sub reveal">Join us at</p>
+  <h2 class="section-title reveal">The Venue</h2>
+  <div class="divider reveal"></div>
+
+  <div class="location-box reveal">
+    <span class="pin">📍</span>
+    <h3>We would be honoured by your presence</h3>
+    <p>Tap below to view the venue location and get directions on Google Maps.</p>
+    <a class="btn-gold" href="https://maps.app.goo.gl/zoXW27V3fLcFHnKRA" target="_blank" rel="noopener">View Location</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <img src="imgs/couple-dance.png" alt="Celebration illustration" class="footer-img reveal">
+  <div class="footer-arabic reveal">جزاك الله خيرا</div>
+  <p class="footer-note reveal">Your presence and prayers mean the world to us on this joyous occasion.</p>
+  <p class="footer-names shimmer-text reveal">Usama &amp; Alishba</p>
+  <p class="footer-credit">Made with love for our special day</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
